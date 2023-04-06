@@ -32,7 +32,7 @@ void testcases(){
     
     ll x=count_one;
     
-    ll ans = (bin_exp_iter(3,x) - (3*bin_exp_iter(2,x))%M+3+M)%M;
+    ll ans = (bin_exp_iter(3,x)%M- (3*bin_exp_iter(2,x))%M+3+M)%M;
     cout<<ans<<"\n";
 }
 int main()
